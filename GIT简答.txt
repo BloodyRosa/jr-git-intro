@@ -1,0 +1,17 @@
+1. second.md的内容为：
+A
+B
+         // 这行也可能是$
+C
+E
+F
+#
+%
+
+2. T
+3. F，这两个命令的功能更广泛。git reset 不仅可以用来撤销commits，还可以用来操作staging area和work directory；git revert 则是用来创建一个新的commit来“反做”之前的一个commit的更改。它不是简单地撤销一个commit，而是通过添加一个新的commit来实现更改的撤销，这样做的好处是不会改变已有的commit历史。
+4. T
+5. T
+6. F, git log提供的信息比较简单，git log -p会提供更详细的信息，包括代码的diff信息
+7. F，git log --oneline只用一行提供commit的信息，非常紧凑，而git log --stat提供更详细的统计信息，包括更改了多少行，多少个insertions，多少个deletion之类的。
+8. T, 因为git revert是通过创建一个新的commit来“反做”之前的commit，不会改变已有的历史，所以更安全。
